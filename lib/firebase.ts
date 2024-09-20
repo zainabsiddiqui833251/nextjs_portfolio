@@ -17,7 +17,6 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 
 // Initialize Firestore (db) and Authentication (auth)
 const db = getFirestore(app); // Firestore instance
@@ -25,3 +24,4 @@ const auth = getAuth(app); // Authentication instance
 
 // Export Firestore and Authentication
 export { db, auth };
+

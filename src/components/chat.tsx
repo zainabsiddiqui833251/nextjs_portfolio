@@ -43,8 +43,8 @@ const Chat = () => {
           <div key={message.id} className="message">
             {message.text}
            <div className="reply-delbtns flex justify-between items-center m-[3%]">
-           <button onClick={() => replyToMessage(message.id)} className="reply-button w-[30%] mr-2 text-[2vw]">Reply</button>
-           <button onClick={() => deleteMessage(message.id)} className="delete-button w-[30%] ml-2 text-[2vw]">Delete</button>
+           <button onClick={() => replyToMessage(message.id)} className="reply-button w-[30%] mr-2 text-[1vw]">Reply</button>
+           <button onClick={() => deleteMessage(message.id)} className="delete-button w-[30%] ml-2 text-[1vw]">Delete</button>
            </div>
           </div>
         ))}

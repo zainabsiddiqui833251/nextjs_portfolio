@@ -19,22 +19,22 @@ const Navbar = () => {
         <ul className='flex justify-between items-center mt-2 text-[1.5vw] text-[#a09f9f] uppercase'>
           <li>
             <Link href="#about" className='hover:text-[#00ffff]'>
-              <i className="fa-solid fa-user text-[#00ffff]"></i>&#32;About
+              <i className="bi bi-info-circle text-[#00ffff]"></i>&#32;About
             </Link>
           </li>
           <li>
             <Link href="#skills" className='hover:text-[#00ffff]'>
-              <i className="fa-solid fa-code text-[#00ffff]"></i> &#32;Skills
+              <i className="bi-solid bi-code text-[#00ffff]"></i> &#32;Skills
             </Link>
           </li>
           <li>
             <Link href="#projects" className='hover:text-[#00ffff]'>
-              <i className="fa-solid fa-laptop-code text-[#00ffff]"></i> &#32;MY WORK
+              <i className="bi bi-laptop text-[#00ffff]"></i> &#32;MY WORK
             </Link>
           </li>
           <li>
             <Link href="#contact" className='hover:text-[#00ffff]'>
-              <i className="fa-solid fa-file-contract text-[#00ffff]"></i>&#32;Contact
+              <i className="bi bi-telephone text-[#00ffff]"></i>&#32;Contact
             </Link>
           </li>
         </ul>
@@ -44,7 +44,7 @@ const Navbar = () => {
           className='border-solid border-[2px] text-[1.2vw] border-[#00ffff] p-2 rounded-[10px] hover:bg-[#00ffff] hover:text-[#070606] mr-[3%]'
           onClick={toggleChat}
         >
-          <i className="fa-solid fa-message"></i> Start Chat
+          <i className="bi-solid bi-message"></i> Start Chat
         </button>
       </div>
 

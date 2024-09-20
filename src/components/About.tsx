@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
+
 const About = () => {
     return (
         <section className='about flex justify-between items-center w-[100%] pr-[3%] pl-[3%] ' id='about'>
