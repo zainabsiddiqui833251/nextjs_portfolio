@@ -33,7 +33,7 @@ const Projects: React.FC = () => {
               <details>
                 <summary>read more</summary>
                 <p>Easily create a professional resume with our Dynamic Resume Generator. Simply enter your details, and
-                  the tool will generate a polished, customizable resume that’s ready to download or print.</p>
+                  the tool will generate a polished, customizable resume that&apos;s ready to download or print.</p>
               </details>
             </div>
           </div>
@@ -61,7 +61,7 @@ const Projects: React.FC = () => {
               <h3>pakola clone</h3>
               <details >
                 <summary>read more</summary>
-                <p>A replica of Pakola's website created using HTML, CSS, and Bootstrap. It features a clean, responsive
+                <p>A replica of Pakola&apos;s website created using HTML, CSS, and Bootstrap. It features a clean, responsive
                   design to practice layout and styling techniques.</p>
               </details>
             </div>

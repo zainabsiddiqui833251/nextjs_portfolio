@@ -11,7 +11,7 @@ const About = () => {
                     IT and skills in HTML, CSS, JavaScript, TypeScript, Next.js, and Tailwind CSS, I focus on delivering
                     user-friendly and interactive web experiences. I enjoy building projects from scratch and
                     constantly improving my skill set. Currently pursuing a BS in Physiology, I am also expanding my
-                    expertise in data analysis, business analytics, and graphic design. I'm always eager to embrace
+                    expertise in data analysis, business analytics, and graphic design. I&apos;m always eager to embrace
                     new challenges and bring ideas to life through code.</p>
                 <h3 className='uppercase text-[#00ffff] text-[2vw] ' id='proj-head1'>education</h3>
                 <div className="education flex justify-between items-center m-[2%] capitalize text-[1.2vw] " id='container'>

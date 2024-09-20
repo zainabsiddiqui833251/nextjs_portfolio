@@ -5,7 +5,7 @@ const Header = () => {
         <header className='text-[white] w-[100%] flex items-center justify-between' id='home'>
             <div className="header-container-1 p-[5%] w-fit font-[baskervville] ml-[10%]" >
                 <h1 className='text-[3.3vw]'>
-                    Hello, It's Me <br />
+                    Hello, It&apos;s Me <br />
                     <span>Zainab Siddiqui</span>
                     {/* <span id='title'> frontend developer</span> */}
                     <p id='title' className=' text-[#00ffff] font-[greatVibes]'>a frontend developer</p>
