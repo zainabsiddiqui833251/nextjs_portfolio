@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body{
+  background-color: black;
+  color: white;
+}
+header {
+  transform: skewY(1deg);
+  border-bottom: solid rgb(83, 83, 83);
+}
+.about {
+  transform: skewY(-1deg);
+  border-bottom: solid rgb(83, 83, 83);
+}
+.about-2,.about-1{
+  transform: skewY(1deg);
+  padding: 2%;
+}
+header .header-container-1 ,
+header .header-container-2 ,
+.projects  {
+  transform: skewY(-1deg);
+}
+.projects{
+  transform: skewY(2deg);
+  border-bottom: solid rgb(83, 83, 83);
+  padding: 2%;
+}
+.projects .project2{
+  transform: skewY(-3deg);
+}
+#proj-head1{
+  animation: blink 1s 1s infinite ;
+}
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+#title {
+  border-right: 4px solid #00ffff; /* Creates the cursor effect */
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Hides overflowing text to simulate typing */
+  
+  animation: typing 0.5s infinite step-end, type 5s steps(17) infinite forwards; /* Steps adjusted to match 17 characters */
+  text-transform: capitalize;
+}
+
+@keyframes typing {
+  50% {
+    border-color: transparent; /* Blinks the cursor */
+  }
+}
+
+@keyframes type {
+  0% {
+    width: 0%; 
+  }
+  100% {
+    width: 33vw; 
+  }
+}
+
+#container:hover ul,#container:hover div{
+  opacity: .5;
+  filter: blur(3px);
+}
+#container ul:hover,#container div:hover{
+  opacity: 1;
+  filter: blur(0px);
+}
+/* styles/global.css */
+.chat-container {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  max-width: 70vw;
+  margin: 0 auto;
+  background-color: black;
+}
+
+.messages {
+  height: 50vh;
+  overflow-y: scroll;
+  margin-bottom: 1rem;
+}
+
+.message {
+  padding: 0.5rem;
+  border-bottom: 1px solid black;
+}
+
+.chat-container input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+.chat-container input:focus{
+  border: none;
+  outline: none;
+}
+.chat-container button {
+ 
+  padding: 0.5rem;
+  background-color:transparent;
+  color: #00ffff;
+  border: #00ffff solid;
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.overlay-content {
+  background: #2c2c2c;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50vw; /* Adjust width as needed */
+  position: relative;
+}
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: solid red;
+  font-weight: bold;
+  cursor: pointer;
+  color:white;
+  background-color:red;
+  border-radius: 8px;
+ font-size: 1.5vw;
+ padding: 1%;
+}
+/* Scrollbar styles */
+.chat-container::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+.chat-container::-webkit-scrollbar-track {
+  background: transparent; /* Make track transparent */
+  border-radius: 50px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00ffff; /* Color of the scrollbar thumb */
+  border-radius: 50px; /* Rounded corners */
+}
+
+.chat-container::-webkit-scrollbar-thumb:hover {
+  background: #008c8c; /* Darker color on hover */
+}
+
+/* For Firefox */
+.chat-container {
+  scrollbar-width: thin; /* Options: auto | thin */
+  scrollbar-color: #00ffff transparent; /* thumb color and track color */
+}
