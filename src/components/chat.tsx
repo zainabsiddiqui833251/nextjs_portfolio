@@ -49,14 +49,14 @@ const Chat = () => {
   };
 
   return (
-    <div className="chat-container">
-      <div className="messages">
+    <div className="chat-container border-[#ccc] border-[1px] border-solid p-[1rem] max-w-[300px] m-auto bg-black">
+      <div className="messages h-[50vh] overflow-x-[scroll] mb-[1rem]">
         {messages.map((message) => (
-          <div key={message.id} className="message">
+          <div key={message.id} className="message p-[0.5rem] border-black border-[1px] border-solid">
             {message.text}
             <div className="reply-delbtns flex justify-between items-center m-[3%]">
-              <button onClick={() => replyToMessage(message.id)} className="reply-button w-[30%] mr-2 text-[1vw]">Reply</button>
-              <button onClick={() => deleteMessage(message.id)} className="delete-button w-[30%] ml-2 text-[1vw]">Delete</button>
+              <button onClick={() => replyToMessage(message.id)} className="reply-button p-[0.5rem] bg-transparent text-[#00ffff] border-solid border-[2px] rounded-lg border-[#00ffff] block m-auto rounded-[10px]'> w-[30%] mr-2 text-[1vw]">Reply</button>
+              <button onClick={() => deleteMessage(message.id)} className="delete-button border-solid border-[2px] border-[#00ffff] w-[30%] ml-2 p-[0.5rem] bg-transparent rounded-lg text-[#00ffff] block m-auto rounded-[10px]'> text-[1vw]">Delete</button>
             </div>
           </div>
         ))}
@@ -66,10 +66,11 @@ const Chat = () => {
         value={newMessage}
         onChange={(e) => setNewMessage(e.target.value)}
         placeholder={replyTo ? `Replying to message ${replyTo}` : "Type a message..."}
+        className='w-[100%] p-[0.5rem] mb-[0.5rem] bg-transparent border-none text-[white] focus:border-none focus:outline-none'
       />
       <div className="send-replybtns flex justify-between items-center m-[3%]">
-        <button onClick={sendMessage} className='w-[30%] mb-2'>Send</button>
-        {replyTo && <button onClick={() => setReplyTo(null)} className='w-[30%] mt-2'>Cancel Reply</button>}
+        <button onClick={sendMessage} className='w-[30%] mb-2 p-[0.5rem] bg-transparent text-[#00ffff] block m-auto rounded-[10px] border-solid border-[2px] border-[#00ffff]'>Send</button>
+        {replyTo && <button onClick={() => setReplyTo(null)} className='w-fit mb-2 p-[0.5rem] bg-transparent text-[#00ffff] block m-auto rounded-[10px] border-solid border-[2px] border-[#00ffff]'>Cancel Reply</button>}
       </div>
     </div>
   );

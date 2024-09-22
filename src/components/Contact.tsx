@@ -51,23 +51,23 @@ const Contact: React.FC = () => {
     <section id='contact' className='p-10 w-[100%]'>
       <h1 className="text-[3vw] uppercase text-center text-[#00ffff] font-bold mb-4" id='proj-head1'>Contact Me</h1>
       <div className="contact-container flex justify-between items-center w-[90%] m-auto">
-        <div className="child-1 border-solid border-[2px] border-[grey] rounded-[20px] p-[1%] bg-[#80808056]">
+        <div className="child-1  p-[1%] ">
           <form onSubmit={handleSubmit}>
             <label htmlFor="name">
               <h3 className='uppercase text-[#00ffff] text-[1.5vw] m-[1%] mb-[3%]'><i className="bi bi-person"></i>  Full Name:</h3>
-              <input type="text" name="name" id="name" placeholder='Full Name' value={formData.name} onChange={handleChange}  className='w-[40vw] p-[0.8%] m-[0.6%] text-[1.5vw] text-[white] font-[bold] rounded-[8px] bg-transparent border-none focus:outline-none focus:border-none' required />
+              <input type="text" name="name" id="name" placeholder='Full Name' value={formData.name} onChange={handleChange}  className='w-[40vw] p-[0.8%] m-[0.6%] text-[1.5vw] text-[white] font-[bold]  bg-transparent border-b-2 focus:outline-none focus:border-b-2' required />
             </label><br />
             <label htmlFor="email">
               <h3 className='uppercase text-[#00ffff] text-[1.5vw] m-[1%] mb-[3%]'><i className="bi bi-envelope"></i>  Email:</h3>
-              <input type="email" name="email" id="email" placeholder='Email'  className='w-[40vw] p-[0.8%] m-[0.6%] text-[1.5vw] text-[white] font-[bold] rounded-[8px] bg-transparent border-none focus:outline-none focus:border-none' value={formData.email} onChange={handleChange} required />
+              <input type="email" name="email" id="email" placeholder='Email'  className='w-[40vw] p-[0.8%] m-[0.6%] text-[1.5vw] text-[white] font-[bold]  bg-transparent border-b-2 focus:outline-none focus:border-b-2' value={formData.email} onChange={handleChange} required />
             </label><br />
             <label htmlFor="phone">
               <h3 className='uppercase text-[#00ffff] text-[1.5vw] m-[1%] mb-[3%]'><i className="bi bi-telephone"></i>  Phone Number:</h3>
-              <input type="tel" name="phone" id="phone" placeholder='Phone Number' value={formData.phone} onChange={handleChange}  className='w-[40vw] p-[0.8%] m-[0.6%] text-[1.5vw] text-[white] font-[bold] rounded-[8px] bg-transparent border-none focus:outline-none focus:border-none' required />
+              <input type="tel" name="phone" id="phone" placeholder='Phone Number' value={formData.phone} onChange={handleChange}  className='w-[40vw] p-[0.8%] m-[0.6%] text-[1.5vw] text-[white] font-[bold]  bg-transparent border-b-2 focus:outline-none focus:border-b-2' required />
             </label><br />
             <label htmlFor="message">
               <h3 className='uppercase text-[#00ffff] text-[1.5vw] m-[1%] mb-[3%]'><i className="bi bi-chat"></i>  Message:</h3>
-              <textarea name="message" id="message" placeholder='Message' value={formData.message} onChange={handleChange}  className='w-[40vw] p-[0.8%] m-[0.6%] text-[1.5vw] text-[white] font-[bold] rounded-[8px] bg-transparent border-none focus:outline-none focus:border-none' required />
+              <textarea name="message" id="message" placeholder='Message' value={formData.message} onChange={handleChange}  className='w-[40vw] p-[0.8%] m-[0.6%] text-[1.5vw] text-[white] font-[bold]  bg-transparent border-b-2 focus:outline-none focus:border-b-2' required />
             </label><br />
             <button type="submit" className='border-solid border-[2px] capitalize w-[20vw] flex justify-center items-center text-[1.5vw] border-[#00ffff] p-2 rounded-[10px] hover:bg-[#00ffff] hover:text-[#070606] m-auto mt-[2%]'>Send</button>
           </form>

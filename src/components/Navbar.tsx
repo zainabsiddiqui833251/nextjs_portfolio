@@ -50,9 +50,9 @@ const Navbar = () => {
 
       {/* Overlay Chat Component */}
       {isChatOpen && (
-        <div className="overlay">
-          <div className="overlay-content">
-            <button onClick={toggleChat} className="close-button">Close</button>
+        <div className="overlay fixed top-0 left-0 right-0 bottom-0 bg-[#000000b3] flex items-center justify-center z-[1000]">
+          <div className="overlay-content bg-[#2c2c2c] p-[20px] rounded-[10px] w-[310px] relative">
+            <button onClick={toggleChat} className="close-button absolute top-[10px] right-[10px] bg-transparent border-solid border-[red] border-[1px] font-bold cursor-pointer text-[white] bg-[red] rounded-[8px] text-[1.2vw] p-[1%] ">Close</button>
             <Chat />
           </div>
         </div>
