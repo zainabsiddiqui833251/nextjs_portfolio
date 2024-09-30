@@ -69,7 +69,7 @@ const Chat = () => {
       <div className="messages h-[50vh] overflow-y-scroll mb-[1rem]">
         {messages.length === 0 ? (
           <div className="default-message text-left text-[#00ffff]">
-            Let's chat : )
+            Let&apos;s chat : )
           </div>
         ) : (
           messages.map((message) => (
