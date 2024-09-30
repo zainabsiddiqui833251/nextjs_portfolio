@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { collection, addDoc, query, onSnapshot, deleteDoc, doc } from 'firebase/firestore';
 import { db } from '../../lib/firebase';
 
@@ -13,6 +13,7 @@ const Chat = () => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [newMessage, setNewMessage] = useState("");
   const [replyTo, setReplyTo] = useState<string | null>(null);
+  const messagesEndRef = useRef<HTMLDivElement>(null); // Ref for auto-scrolling
 
   useEffect(() => {
     const q = query(collection(db, "messages"));
@@ -23,10 +24,21 @@ const Chat = () => {
         timestamp: doc.data().timestamp?.toDate() || new Date(),
         replyTo: doc.data().replyTo || null,
       })) as Message[];
+
+      // Sort messages by timestamp
+      messagesArr.sort((a, b) => a.timestamp.getTime() - b.timestamp.getTime());
+      
       setMessages(messagesArr);
     });
     return () => unsubscribe();
   }, []);
+
+  useEffect(() => {
+    // Scroll to the bottom when messages change
+    if (messagesEndRef.current) {
+      messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [messages]);
 
   const sendMessage = async () => {
     if (newMessage.trim() === "") return;
@@ -48,18 +60,30 @@ const Chat = () => {
     setNewMessage("");
   };
 
+  const formatTime = (timestamp: Date) => {
+    return timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  };
+
   return (
     <div className="chat-container border-[#ccc] border-[1px] border-solid p-[1rem] max-w-[300px] m-auto bg-black">
-      <div className="messages h-[50vh] overflow-x-[scroll] mb-[1rem]">
-        {messages.map((message) => (
-          <div key={message.id} className="message p-[0.5rem] border-black border-[1px] border-solid">
-            {message.text}
-            <div className="reply-delbtns flex justify-between items-center m-[3%]">
-              <button onClick={() => replyToMessage(message.id)} className="reply-button p-[0.5rem] bg-transparent text-[#00ffff] border-solid border-[2px] rounded-lg border-[#00ffff] block m-auto rounded-[10px]'> w-[30%] mr-2 text-[1vw]">Reply</button>
-              <button onClick={() => deleteMessage(message.id)} className="delete-button border-solid border-[2px] border-[#00ffff] w-[30%] ml-2 p-[0.5rem] bg-transparent rounded-lg text-[#00ffff] block m-auto rounded-[10px]'> text-[1vw]">Delete</button>
-            </div>
+      <div className="messages h-[50vh] overflow-y-scroll mb-[1rem]">
+        {messages.length === 0 ? (
+          <div className="default-message text-left text-[#00ffff]">
+            Let's chat : )
           </div>
-        ))}
+        ) : (
+          messages.map((message) => (
+            <div key={message.id} className="message p-[0.5rem] border-black border-[1px] border-solid">
+              <div className="message-text">{message.text}</div>
+              <div className="message-time text-gray-400 text-[15px] mt-1">{formatTime(message.timestamp)}</div>
+              <div className="reply-delbtns flex justify-between items-center m-[3%]">
+                <button onClick={() => replyToMessage(message.id)} className="reply-button p-[0.5rem] bg-transparent text-[#00ffff] border-solid border-[2px] rounded-lg border-[#00ffff] block m-auto w-[30%] mr-2">Reply</button>
+                <button onClick={() => deleteMessage(message.id)} className="delete-button border-solid border-[2px] border-[#00ffff] w-[30%] ml-2 p-[0.5rem] bg-transparent rounded-lg text-[#00ffff] block m-auto">Delete</button>
+              </div>
+            </div>
+          ))
+        )}
+        <div ref={messagesEndRef} /> {/* Scroll anchor */}
       </div>
       <input
         type="text"
@@ -77,7 +101,3 @@ const Chat = () => {
 };
 
 export default Chat;
-
-
-
-

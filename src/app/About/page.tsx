@@ -16,26 +16,26 @@ const About = () => {
                 <h3 className='uppercase text-[#00ffff] text-[2vw] ' id='proj-head1'>education</h3>
                 <div className="education flex justify-between items-center m-[2%] capitalize text-[1.2vw] " id='container'>
                     <div className="edu-1" >
-                        <ul className='text-[1.2vw] bg-[#2c2c2c] hover:bg-[#00ffff48]   p-2 w-[80%] rounded-[12px] transform transition duration-300 hover:scale-110'>
+                        <ul className='text-[1.2vw] bg-[#2c2c2c] hover:bg-[#00ffff48]   p-2 w-[80%] h-[10vw] rounded-[12px] transform transition duration-300 hover:scale-110'>
                             <li>BS physiology</li>
                             <li>university of karachi</li>
                             <li>jan,2024 - continued</li>
                         </ul >
                         <br />
-                        <ul className='text-[1.2vw] bg-[#2c2c2c] p-2 w-[80%] hover:bg-[#00ffff48]  rounded-[12px] transform transition duration-300 hover:scale-110'>
+                        <ul className='text-[1.2vw] bg-[#2c2c2c] p-2 w-[80%] hover:bg-[#00ffff48] h-[10vw] rounded-[12px] transform transition duration-300 hover:scale-110'>
                             <li>INTERMEDIATE ( PRE-MEDICAL )</li>
                             <li>BAMM PECHS GOVT COLLEGE  FOR WOMEN </li>
                             <li>2021-2023</li>
                         </ul>
                     </div>
                     <div className="edu-2">
-                        <ul className='text-[1.2vw] bg-[#2c2c2c] p-2 w-[80%] hover:bg-[#00ffff48]  rounded-[12px] transform transition duration-300 hover:scale-110'>
+                        <ul className='text-[1.2vw] bg-[#2c2c2c] p-2 w-[80%] hover:bg-[#00ffff48] h-[10vw] rounded-[12px] transform transition duration-300 hover:scale-110'>
                             <li>frontend developer</li>
                             <li>techforce pakistan</li>
                             <li>sep,2023 - june-2024</li>
                         </ul>
                         <br />
-                        <ul className='text-[1.2vw] bg-[#2c2c2c] p-2 w-[80%] hover:bg-[#00ffff48]  rounded-[12px] transform transition duration-300 hover:scale-110'>
+                        <ul className='text-[1.2vw] bg-[#2c2c2c] p-2 w-[80%] hover:bg-[#00ffff48] h-[10vw] rounded-[12px] transform transition duration-300 hover:scale-110'>
                             <li>Certified Cloud Applied Generative AI Engineer</li>
                             <li>GOVERNOR HOUSE</li>
                             <li>FEB,2024 - continued</li>
