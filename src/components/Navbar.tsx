@@ -47,7 +47,7 @@ const Navbar = () => {
             className="border-solid border-2 text-[1.2vw] border-[#00ffff] p-2 rounded-lg hover:bg-[#00ffff] hover:text-[#070606] mr-4"
             onClick={toggleChat}
           >
-            <i className="bi-solid bi-message"></i> Start Chat
+            <i className="bi bi-chat-left"></i> Start Chat
           </button>
         </div>
       </div>
@@ -76,17 +76,17 @@ const Navbar = () => {
         <ul className="flex flex-col items-center gap-6 mt-8 text-[3vw] uppercase">
           <li>
             <Link href="/About" className="hover:text-[#00ffff]" onClick={toggleSidebar}>
-              About
+            <i className='bi bi-info-circle'></i>&#32;  About
             </Link>
           </li>
           <li>
             <Link href="/Projects" className="hover:text-[#00ffff]" onClick={toggleSidebar}>
-              MY WORK
+              <i className='bi bi-laptop'></i>&#32; MY WORK
             </Link>
           </li>
           <li>
             <Link href="/Contact" className="hover:text-[#00ffff]" onClick={toggleSidebar}>
-              Contact
+              <i className='bi bi-telephone'></i>&#32; Contact
             </Link>
           </li>
         </ul>
@@ -95,7 +95,7 @@ const Navbar = () => {
             className="border-solid border-2 text-[3vw] border-[#00ffff] p-2 rounded-lg hover:bg-[#00ffff] hover:text-[#070606]"
             onClick={toggleChat}
           >
-            <i className="bi-solid bi-message"></i> Start Chat
+            <i className="bi bi-chat-left"></i>&#32; Start Chat
           </button>
         </div>
       </div>
