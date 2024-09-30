@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Header = () => {
     return (
-        <header className='header text-[white] w-[100%] flex items-center justify-between' id='home'>
+        <header className='header h-[85vh] text-[white] w-[100%] flex items-center justify-between' id='home'>
             <div className="header-container-2 border-solid border-[#00ffff] w-[20vw] h-[20vw] rounded-[50%] border-[4px] ml-[15%] relative overflow-hidden">
                 <img
                     src="/images/profile.png"

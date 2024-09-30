@@ -78,6 +78,9 @@ body{
     display: block;
     width: 100%;
   }
+  .social-links ul li i{
+    font-size: 4vw;
+  }
   #contact{
     padding: 1%;
   }
