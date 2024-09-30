@@ -21,7 +21,7 @@ export default function RootLayout({
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
         />
         <link rel="icon" href="/favicon.png" type="image/png" />
-        <title>Zainab Siddiqui</title>
+        
       </head>
       <body>
         <Navbar />

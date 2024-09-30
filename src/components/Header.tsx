@@ -21,11 +21,11 @@ const Header = () => {
                 </h1>
                 <div className="social-links">
                     <ul className='flex justify-start  items-center gap-6' >
-                        <li className='pb-2'><Link href="#" className='text-[1.5vw]'><i className="bi bi-twitter text-[2vw] hover:text-[#a09f9f] mr-[2%]"></i></Link></li>
-                        <li className='pb-2'><Link href="#" className='text-[1.5vw]'><i className="bi bi-linkedin text-[2vw] hover:text-[#a09f9f] mr-[2%]"></i></Link></li>
-                        <li className='pb-2'><Link href="#" className='text-[1.5vw]'><i className="bi bi-github text-[2vw] hover:text-[#a09f9f] mr-[2%]"></i></Link></li>
-                        <li className='pb-2'><Link href="#" className='text-[1.5vw]'><i className="bi bi-telegram text-[2vw] hover:text-[#a09f9f] mr-[2%]"></i></Link></li>
-                        <li className='pb-2'><Link href="#" className='text-[1.5vw]'><i className="bi bi-whatsapp text-[2vw] hover:text-[#a09f9f] mr-[2%]"></i></Link></li>
+                        <li className='pb-2'><Link href="https://x.com/sidd94699?t=7F4nRv05KgvFdfHVYx9Klw&s=09" className='text-[1.5vw]'><i className="bi bi-twitter text-[2vw] hover:text-[#a09f9f] mr-[2%]"></i></Link></li>
+                        <li className='pb-2'><Link href="https://www.linkedin.com/in/zainab-siddiqui/" className='text-[1.5vw]'><i className="bi bi-linkedin text-[2vw] hover:text-[#a09f9f] mr-[2%]"></i></Link></li>
+                        <li className='pb-2'><Link href="https://github.com/zainabsiddiqui833251" className='text-[1.5vw]'><i className="bi bi-github text-[2vw] hover:text-[#a09f9f] mr-[2%]"></i></Link></li>
+                        <li className='pb-2'><Link href="https://t.me/zs833251" className='text-[1.5vw]'><i className="bi bi-telegram text-[2vw] hover:text-[#a09f9f] mr-[2%]"></i></Link></li>
+                        <li className='pb-2'><Link href="https://wa.me/923138659252" className='text-[1.5vw]'><i className="bi bi-whatsapp text-[2vw] hover:text-[#a09f9f] mr-[2%]"></i></Link></li>
                     </ul>
                 </div>
                 <a href="/cv/zs.pdf" download='zs.pdf' className="download-button  ">
