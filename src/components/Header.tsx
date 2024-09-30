@@ -12,7 +12,7 @@ const Header = () => {
                 />
             </div>
 
-            <div className="header-container-1 p-[5%] w-[50%] font-[baskervville] mr-[10%]" >
+            <div className="header-container-1 p-[5%] w-[45%] font-[baskervville] mr-[10%]" >
                 <h1 className='text-[3.3vw]'>
                     Hello, It&apos;s Me <br />
                     <span>Zainab Siddiqui</span>

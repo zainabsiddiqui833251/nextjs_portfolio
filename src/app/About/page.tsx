@@ -5,7 +5,7 @@ import Image from 'next/image'
 const About = () => {
     return (
         <section className='about flex justify-between items-center w-[100%] pr-[3%] pl-[3%] ' id='about'>
-            <div className="about-1 w-[60%]">
+            <div className="about-1 w-[60%] p-6"> 
                 <p className=' p-4 text-[1.2vw]'>I am Zainab Siddiqui, a Frontend Web Developer
                     passionate about creating beautiful, responsive, and dynamic websites. With a strong background in
                     IT and skills in HTML, CSS, JavaScript, TypeScript, Next.js, and Tailwind CSS, I focus on delivering
@@ -43,28 +43,28 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="about-2 w-[40%] flex items-center justify-between" id='container' >
+            <div className="about-2 w-[40%] flex items-center justify-center gap-10" id='container' >
                 <div>
                     <h2 className='uppercase text-[2vw] text-[#00ffff] ' id='proj-head1'>skills</h2>
                     {/* First column of images and texts */}
                     <div className="flex items-center justify-start ">
-                        <Image src='/images/html.png' height={50} width={50} className='m-[7%] w-[50%]' alt='html' />
+                        <Image src='/images/html.png' height={50} width={50} className='m-[7%]  w-[60px] h-[60px]' alt='html' />
                         <h4 className='ml-1 text-[1.3vw]'>HTML</h4>
                     </div>
                     <div className="flex items-center justify-start ">
-                        <Image src='/images/css.png' height={50} width={50} className='m-[7%] w-[50%]' alt='css' />
+                        <Image src='/images/css.png' height={50} width={50} className='m-[7%]  w-[60px] h-[60px]' alt='css' />
                         <h4 className='ml-1 text-[1.3vw]'>CSS</h4>
                     </div>
                     <div className="flex items-center justify-start ">
-                        <Image src='/images/js.png' height={50} width={50} className='m-[7%] w-[50%]' alt='js' />
+                        <Image src='/images/js.png' height={50} width={50} className='m-[7%]  w-[60px] h-[60px]' alt='js' />
                         <h4 className='ml-1 text-[1.3vw]'>JavaScript</h4>
                     </div>
                     <div className="flex items-center justify-start ">
-                        <Image src='/images/ts.png' height={50} width={50} className='m-[7%] w-[50%]' alt='ts' />
+                        <Image src='/images/ts.png' height={50} width={50} className='m-[7%]  w-[60px] h-[60px]' alt='ts' />
                         <h4 className='ml-1 text-[1.3vw]'>TypeScript</h4>
                     </div>
                     <div className="flex items-center justify-start ">
-                        <Image src='/images/react.png' height={50} width={50} className='m-[7%] w-[50%]' alt='react' />
+                        <Image src='/images/react.png' height={50} width={50} className='m-[7%]  w-[60px] h-[60px]' alt='react' />
                         <h4 className='ml-1 text-[1.3vw]'>React</h4>
                     </div>
                 </div>
@@ -72,23 +72,23 @@ const About = () => {
                 {/* Second column of images and texts */}
                 <div>
                     <div className="flex items-center justify-start ">
-                        <Image src='/images/next.png' height={50} width={50} className='m-[7%] w-[50%]' alt='nextjs' />
+                        <Image src='/images/next.png' height={50} width={50} className='m-[7%]  w-[60px] h-[60px]' alt='nextjs' />
                         <h4 className='ml-1 text-[1.3vw]'>Next.js</h4>
                     </div>
                     <div className="flex items-center justify-start ">
-                        <Image src='/images/tailwind.png' height={50} width={50} className='m-[7%] w-[50%]' alt='tailwind' />
+                        <Image src='/images/tailwind.png' height={50} width={50} className='m-[7%]  w-[60px] h-[60px]' alt='tailwind' />
                         <h4 className='ml-1 text-[1.3vw]'>Tailwind CSS</h4>
                     </div>
                     <div className="flex items-center justify-start ">
-                        <Image src='/images/bootstrap.png' height={50} width={50} className='m-[7%] w-[50%]' alt='bootstrap' />
+                        <Image src='/images/bootstrap.png' height={50} width={50} className='m-[7%]  w-[60px] h-[60px]' alt='bootstrap' />
                         <h4 className='ml-1 text-[1.3vw]'>Bootstrap</h4>
                     </div>
                     <div className="flex items-center justify-start ">
-                        <Image src='/images/firebase.png' height={50} width={50} className='m-[7%] w-[50%]' alt='firebase' />
+                        <Image src='/images/firebase.png' height={50} width={50} className='m-[7%]  w-[60px] h-[60px]' alt='firebase' />
                         <h4 className='ml-1 text-[1.3vw]'>Firebase</h4>
                     </div>
                     <div className="flex items-center justify-start ">
-                        <Image src='/images/netlify.png' height={50} width={50} className='m-[7%] w-[50%]' alt='netlify' />
+                        <Image src='/images/netlify.png' height={50} width={50} className='m-[7%]  w-[60px] h-[60px]' alt='netlify' />
                         <h4 className='ml-1 text-[1.3vw]'>Netlify</h4>
                     </div>
                 </div>
